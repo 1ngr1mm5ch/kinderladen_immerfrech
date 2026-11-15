@@ -1,0 +1,55 @@
+---
+---
+<ul class="navigation">
+    <li class="navigation__item">
+        <a class="navigation__item-link" href="#">Zuhause</a>
+    </li>
+    <li class="navigation__item">
+        <a class="navigation__item-link" href="#education">
+            Konzept
+        </a>
+    </li>
+    <li class="navigation__item">
+        <a class="navigation__item-link" href="#nutrition">
+            Ernährung
+        </a>
+    </li>
+    <li class="navigation__item">
+        <a class="navigation__item-link" href="#preschool">
+            Vorschule
+        </a>
+    </li>
+    <li class="navigation__item">
+        <a class="navigation__item-link" href="#">
+            Kontakt
+        </a>
+    </li>
+</ul>
+
+<style lang="scss">
+    .navigation {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+      @media (min-width: 435px) {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      }
+      height: 100%;
+      margin: 0;
+      padding: 0 var(--responsive-padding);
+
+      &__item {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+      }
+
+      &__item-link {
+        text-decoration: none;
+        color: #000;
+        font-weight: 700;
+        font-size: 17px;
+      }
+    }
+</style>

@@ -1,0 +1,56 @@
+---
+
+---
+<section class="hero">
+    <div class="hero__container">
+        <h1 class="hero__title">
+        <span class="hero__title-first-line">
+            Wir sind
+        </span>
+            <span class="hero__title-second-line">
+            Immerfrech!
+        </span>
+        </h1>
+    </div>
+
+</section>
+
+<style lang="scss">
+  @use "@/styles/variables";
+    .hero {
+      &__container {
+        position: relative;
+        height: 400px;
+        background-image: url("../assets/images/stock_1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        backdrop-filter: brightness(100%);
+      }
+      &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        margin: 0;
+        height: 100%;
+        background-color: transparent;
+        color: #f1f1f1;
+
+        span {
+          margin-left: 1.5rem;
+        }
+      }
+      &__title-first-line {
+        font-size: 60px;
+      }
+
+      &__title-second-line {
+        font-size: var(--responsive-title-font-size);
+        color: transparent;
+        -webkit-text-stroke: 1px #f1f1f1;
+        background: #0b7fac;
+        align-self: flex-start;
+        margin-bottom: 2rem;
+      }
+    }
+</style>

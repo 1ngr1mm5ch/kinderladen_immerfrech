@@ -1,0 +1,21 @@
+---
+import IntroductionSection from "@/components/introductionSection.astro";
+import Hero from "@/components/hero.astro";
+import EducationSection from "@/components/educationSection.astro";
+import NutritionSection from "@/components/nutritionSection.astro";
+import PreschoolSection from "@/components/preschoolSection.astro";
+---
+<div class="main-content">
+    <Hero />
+    <IntroductionSection />
+    <EducationSection />
+    <NutritionSection />
+    <PreschoolSection />
+</div>
+
+<style lang="scss">
+    @use "../styles/variables.scss";
+    .main-content {
+      padding: 0 var(--responsive-padding);
+    }
+</style>

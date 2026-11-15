@@ -1,0 +1,68 @@
+---
+import { Image } from 'astro:assets';
+import picture from "../assets/images/stock_2.png"
+---
+<section class="patterns">
+
+    <h3>Unsere Werte</h3>
+    <div class="patterns__collection">
+        <div class="patterns__collection-wrapper">
+            <section class="patterns__tile">
+                <div class="patterns__tile-wrapper">
+                    <div class="patterns__tile-image-container">
+                        <div class="patterns__tile-image-container">
+                          <Image
+                            class="patterns__tile-image"
+                            src={picture}
+                            alt="finger paintings"
+                          />
+                        </div>
+                    </div>
+                    <div class="patterns__tile-text-wrapper">
+                        <h4 class="patterns__tile-title">Vielfalt</h4>
+                        <p class="patterns__tile-text">
+                            In unserem Kinderladen ist Vielfalt nicht nur ein Wort,
+                            es ist vielmehr ein Bestandteil unserer Identität als Kinderladen.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+
+<style lang="scss">
+  .patterns {
+    h4, p {
+      transform: rotate(-2.5deg);
+    }
+
+    &__patterns-tile {
+      width: 100%;
+      position: relative;
+    }
+
+    &__collection-wrapper {
+      background-color: #0b7fac;
+      padding: 2.5rem 2rem;
+      border-radius: 1rem;
+    }
+
+    &__tile-image-container {
+      width: 100%;
+      padding: 0;
+    }
+
+    &__tile-image {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 16 / 9;
+    }
+
+    &__tile-text-wrapper {
+      background-color: #fdc300;
+      padding: 1.25rem 1rem;
+      transform: rotate(2.5deg);
+    }
+  }
+</style>

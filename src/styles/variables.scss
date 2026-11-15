@@ -1,0 +1,19 @@
+:root {
+  --responsive-padding: 10%;
+  --responsive-title-font-size: 45px;
+
+  @media (min-width: 435px) {
+    --responsive-padding: 5%;
+    --responsive-title-font-size: 60px;
+  }
+  @media (min-width: 768px) {
+    --responsive-padding: 15%;
+    --responsive-title-font-size: 90px;
+  }
+  @media (min-width: 992px) {
+    --responsive-padding: 25%;
+    --responsive-title-font-size: 100px;
+  }
+
+  --header-background: rgb(90 220 90 / 0.49)
+}
